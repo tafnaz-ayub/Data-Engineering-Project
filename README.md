@@ -102,4 +102,3 @@ AS SELECT * FROM silver.orders;
 ```
 
 > Final dataset is now queryable using **T-SQL** from Synapse Studio.
-Just tell me → **"Add architecture diagram"** or **"Add badges"**
