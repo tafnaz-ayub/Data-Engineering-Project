@@ -4,17 +4,17 @@ This is a complete **Modern Data Engineering Pipeline** that moves data from mul
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 
 | Layer         | Purpose                                       | Service Used                 |
 | ------------- | --------------------------------------------- | ---------------------------- |
-| 🟡 **Bronze** | Raw data ingestion (MongoDB, SQL DB)          | Azure Data Lake Gen2         |
-| ⚪ **Silver**  | Data cleaning, transformations, deduplication | Azure Databricks (PySpark)   |
-| 🟢 **Gold**   | Final curated dataset for analytics           | Azure Synapse Serverless SQL |
+|  **Bronze** | Raw data ingestion (MongoDB, SQL DB)          | Azure Data Lake Gen2         |
+|  **Silver**  | Data cleaning, transformations, deduplication | Azure Databricks (PySpark)   |
+|  **Gold**   | Final curated dataset for analytics           | Azure Synapse Serverless SQL |
 
 ---
 
-## ✅ Architecture Diagram
+## Architecture Diagram
 
 ```
 MongoDB / Filess.io SQL DB → Azure Data Lake (Bronze) → Databricks (Silver) → Synapse Serverless SQL (Gold)
@@ -24,7 +24,7 @@ MongoDB / Filess.io SQL DB → Azure Data Lake (Bronze) → Databricks (Silver) 
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Data-Engineering-Project/
@@ -40,7 +40,7 @@ Data-Engineering-Project/
 
 ---
 
-## 🔧 Technologies Used
+## Technologies Used
 
 | Category         | Tool / Service                    |
 | ---------------- | --------------------------------- |
@@ -52,9 +52,9 @@ Data-Engineering-Project/
 
 ---
 
-## 🚀 Pipeline Steps
+## Pipeline Steps
 
-### **1️⃣ MongoDB / Filess.io → Bronze Layer (Raw Ingestion)**
+### **1. MongoDB / Filess.io → Bronze Layer (Raw Ingestion)**
 
 Notebook: `mongodbdataingestion.ipynb` and `DataIngestion.ipynb`
 
@@ -62,11 +62,11 @@ Notebook: `mongodbdataingestion.ipynb` and `DataIngestion.ipynb`
 * Pull data from Filess.io SQL DB
 * Store raw data on **Azure Data Lake (Bronze Layer)**
 
-> ✅ Data stored exactly as-is, no transformation.
+> Data stored exactly as-is, no transformation.
 
 ---
 
-### **2️⃣ Bronze → Silver (Transformations in Databricks)**
+### **2. Bronze → Silver (Transformations in Databricks)**
 
 Notebook: `databircks code transformation.ipynb`
 
@@ -81,7 +81,7 @@ Applied transformations:
 
 ---
 
-### **3️⃣ Silver → Gold (Synapse Analytics)**
+### **3. Silver → Gold (Synapse Analytics)**
 
 File: `SQL on olistdata.sql`
 
